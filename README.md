@@ -4,9 +4,84 @@
         <meta charset="UTF-8">
         
         <title>台灣六都人口
+ </title>
+<style>
+        *{margin: 0px; 
+    padding: 0px;}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161623;
+    min-height: 50vh;
 
-        </title>
-     <link rel="stylesheet" href="台灣六都人口.css">
+    }
+
+    section::before{
+        content: '';
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background: linear-gradient(#ffc107,#fff);
+        border-radius: 50%;
+        transform: translate(-150px,-120px);
+    }
+    
+    section::after{
+        content: '';
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background: linear-gradient(#2196f3,#fff);
+        border-radius: 50%;
+        transform: translate(150px,120px);
+    }    
+
+
+h2{font-size: 24px;}
+.box{ border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-right: solid 1px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    color: aliceblue;
+    min-width: 200px;
+    min-height: 100px;
+    margin: 100px; 
+    padding: 10px;
+    backdrop-filter: blur(10px);
+
+    z-index: 1  ;
+}
+.list{display: flex;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 2cap;
+    margin: 10px 10px;
+}
+
+.imgBox img{width: 50px; height: 50px;
+}
+.list:hover{
+    transform: scale(1.1) translateX(30px) translateY(-15px);
+    transition: 0.5s;
+    background-color: aliceblue;
+    color: #010121;
+    box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+
+}
+.rank{
+position: absolute;
+right: -25px;
+
+}
+.list:hover .rank{
+    right: 5px;
+    transition: 0.5s;
+}
+</style>
     </head>
     <body>
         <section>
